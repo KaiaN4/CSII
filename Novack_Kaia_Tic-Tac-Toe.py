@@ -8,8 +8,8 @@
 │ Description: Asks a user to play tic-tac-toe and allows them to play with |
 | one or two players. This code asks the user to input a number and checks  |
 | if that spot is available. Lastly, the code checks if someone has won or  |
-| if it is a tie, prints the score, and then asks the user if they want to  |
-| play again.                                                               |
+| if it is a tie, prints the score if someone wins, and then asks the user  |
+|if they want to play again.                                                |
 └───────────────────────────────────────────────────────────────────────────┘
 '''
 
