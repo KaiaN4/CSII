@@ -8,7 +8,8 @@
 │ Description: Asks a user to play tic-tac-toe and allows them to play with |
 | one or two players. This code asks the user to input a number and checks  |
 | if that spot is available. Lastly, the code checks if someone has won or  |
-| if it is a tie, and then asks the user if they want to play again.        |
+| if it is a tie, prints the score, and then asks the user if they want to  |
+| play again.                                                               |
 └───────────────────────────────────────────────────────────────────────────┘
 '''
 
@@ -167,10 +168,10 @@ def main():                                                                     
     '''
     while True:                                                                                                     #creates an infinite loop
         yay_nay = input("Do you want to play tic-tac-toe? (yes or no): ").lower()                                   #asks the player if they want to play tic-tac-toe
-        if yay_nay.strip() == "no":                                                                                         #if the player enters no
+        if yay_nay.strip() == "no":                                                                                 #if the player enters no
             print ("Too bad so sad")                                                                                #prints too bad so sad
             sys.exit()                                                                                              #completely exits the code
-        elif yay_nay.strip() == "yes":                                                                                      #if the user enters yes
+        elif yay_nay.strip() == "yes":                                                                              #if the user enters yes
             print ("Yay!")                                                                                          #print Yay!
             break                                                                                                   #break the while True
         else:                                                                                                       #if the player does not enter yes or no
