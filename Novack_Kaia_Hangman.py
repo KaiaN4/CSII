@@ -8,7 +8,7 @@
 │ Description: Asks a user to play hangman. If the player says yes, the     |
 | computer will randomly choose a word from a list of words. The word will  |
 | then be hidden and will be printed on the screen. Then, the computer also |
-| prints the hangman, and everytime the user enters a wrong letter, part of |
+| prints the hangman, and every time the user enters a wrong letter, part of|
 | the hangman is added. When a player guesses an incorrect letter, the      |
 | computer also lets them know that the letter is not in the word The       |
 | computer also lets the user know the letters they have guessed so that    |
@@ -60,7 +60,7 @@ words = ['hello','world', 'python', 'best', 'worst', 'awesome', 'supercalifragil
 max_guesses = 6                                                                   #sets the max guesses equal to 6
 
 while True:
-    play = input("Do you want to play hangman (yes/no): ")                        #asks the user if they want to play hangman
+    play = input("Do you want to play hangman (yes/no): ").lower()                #asks the user if they want to play hangman
     
     if play.strip() == 'yes':                                                     #if the user says yes
         pass                                                                      #do not go through the rest of the loop
@@ -92,7 +92,7 @@ while True:
             print("The word was:",secret)                                         #print the word
             break                                                           
                                                        
-        guess = input('Enter a letter: ')                                         #asks the user to input a letter
+        guess = input('Enter a letter: ').lower()                                 #asks the user to input a letter
 
         if guess.strip() not in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']:            #if the guess is not an alphabetical letter
             print('Enter a letter please!')                                  
