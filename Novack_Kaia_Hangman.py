@@ -75,7 +75,7 @@ while True:
     secret_list = list(secret)                                                    #makes a list out of the secret word
     hidden = []                                                                   #creates a list for the hidden word
     guessed_letters = []                                                          #creates a list for incorrect guesses
-    guesses = 6                                                                   #sets the guesses equal to 0
+    guesses = 6                                                                   #sets the guesses equal to 6
 
     for character in secret_list:                                                 #for every letter in the word
         if character == ' ':                                                      #if there is a character
